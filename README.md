@@ -147,9 +147,13 @@ GMAIL_DOMAIN:gmail.com
 GMAIL_USERNAME:your user name here
 GMAIL_PASSWORD:your password here
 ```
-
+If your rails server is running make sure to turn it on and off.
 Congrats, you did it!! Test it out by creating a user.
 
 Lastly, to make it work in heroku go to your app's settings and under config variables enter in the same keys and values that are in your application.yml file.
 
 Enjoy your new mailer :)
+
+## Errors
+
+If you're getting an authentication error go to your Gmail account's security settings and set permissions for "Less secure apps" to Enabled
