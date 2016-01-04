@@ -22,6 +22,8 @@
       <h1>
 <a id="setting-up-actionmailer-with-gmail" class="anchor" href="#setting-up-actionmailer-with-gmail" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up ActionMailer with Gmail</h1>
 
+<p>Overall setting up ActionMailer within your rails app is pretty straightforward. However, if you're just starting out like I am, there are few small steps that can easily get you caught up. Hopefully this tutorial will help you avoid making the same mistakes I did!</p>
+
 <ul>
 <li>Basic setup</li>
 <li>Passing instance variables to your mailer</li>
@@ -29,7 +31,11 @@
 </ul>
 
 <h2>
-<a id="gettings-started" class="anchor" href="#gettings-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gettings Started</h2>
+<a id="step-1-updating-configenvironmentsdevelopmentrb" class="anchor" href="#step-1-updating-configenvironmentsdevelopmentrb" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 1: Updating config/environments/development.rb</h2>
+
+<p>For some reason rails turns error messages off for its mailer, so they're first thing we're going to do is turn that on.</p>
+
+<div class="highlight highlight-source-ruby"><pre>config.action_mailer.raise_delivery_errors <span class="pl-k">=</span> <span class="pl-c1">true</span></pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/jacohen10/actionmailer">Actionmailer</a> is maintained by <a href="https://github.com/jacohen10">jacohen10</a>.</span>
